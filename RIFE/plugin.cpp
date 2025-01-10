@@ -215,7 +215,7 @@ static void VS_CC rifeCreate(const VSMap *in, VSMap *out,
     if (err)
       d->skipThreshold = 60.0;
 
-    if (model != 68)
+    if (model != 68 && model != 0)
       throw "model must be 68";
 
     if (factorNum < 1)
